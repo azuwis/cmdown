@@ -4,9 +4,6 @@ use strict;
 use warnings;
 use LWP::UserAgent;
 use HTTP::Cookies;
-#use Term::ReadKey;
-#use Term::ReadLine;
-#use Term::Screen;
 
 my $viewer = 'display';
 my $delay = 10; #second
@@ -172,27 +169,3 @@ getcookies();
 #geturls();
 download();
 
-#geturl('0740735821116157');
-#geturl('2612601863419699');
-#geturl('5805783908126286');
-#geturl('2292269643139469');
-
-# BEGIN {
-#     my ($width, $height) = GetTerminalSize;
-#     my $oldwinch = $SIG{'WINCH'};
-#     sub window_changed {
-# 	($width, $height) = GetTerminalSize;
-# 	&$oldwinch if $oldwinch;
-# 	$SIG{'WINCH'} = \&window_changed;
-#     }
-#     $SIG{'WINCH'} = \&window_changed;
-
-#     sub show {
-# 	my @text = @_;
-# 	my $joined_text;
-# 	foreach my $t (@text) {
-# 	    chomp $t;
-	    
-# 	}
-#     }
-# }
